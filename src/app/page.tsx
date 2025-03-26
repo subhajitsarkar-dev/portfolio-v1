@@ -9,14 +9,6 @@ import { SiGmail } from "react-icons/si";
 import homeBackground from "../../public/background.png";
 
 export const generateMetadata = (): Metadata => {
-  // const { title, description, keywords } = aboutPageSeo;
-
-  // return {
-  //   title: title,
-  //   description: description,
-  //   keywords: keywords,
-  // };
-
   return aboutPageSeo;
 };
 
