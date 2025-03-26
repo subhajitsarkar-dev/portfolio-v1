@@ -17,8 +17,8 @@ const page = () => {
             My Projects
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-300">
-            Here are some of the projects I've worked on. Click on github to
-            view details
+            Here are some of the projects I&apos;ve worked on. Click on github
+            to view details
           </p>
         </div>
 
