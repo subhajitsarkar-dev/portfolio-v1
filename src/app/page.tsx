@@ -29,12 +29,12 @@ const page = () => {
           </h1>
           <div className="mt-4 flex justify-center">
             <p className="text-justify text-base sm:w-3/4 sm:text-center">
-              I started my web development journey from Central Institute of
-              Technology in 2021 and it was complete in 2024. As well as I
-              complete my B.A from West Bengal State University. In this period
-              I learned about many languages and frameworks like HTML&#44;
-              CSS&#44; JavaScript&#44; React&#44; Nextjs and so one. In my free
-              time, I love to play video games and listen to music.
+              My web development journey began in 2021 at the Central Institute
+              of Technology&#44; where I honed my skills and completed my
+              training in 2024. On the other side&#44; I earned my Bachelor of
+              Arts degree from West Bengal State University&#44; demonstrating
+              my ability to balance both academic and technical growth. I have
+              good problem solving skill
             </p>
           </div>
 

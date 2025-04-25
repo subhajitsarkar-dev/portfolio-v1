@@ -22,13 +22,6 @@ export const fullStackProject = [
     images: ["/p.jpg", "/p1.png", "/bg4.jpg"],
     link: "https://github.com/subhajitsarkar-dev/Task-Manager",
   },
-  {
-    title: "Blog Application",
-    description:
-      "A full-stack Blog application where Users can sign in securely to manage their blogs including file upload. User can create,  update, delete their post and managing their profiles. This app made by - JavaScript, Nextjs, TypeScript, Tailwind css,Tanstack query, Directus and Shadecn/ui.",
-    images: ["/p.jpg", "/p1.png", "/bg4.jpg"],
-    link: "",
-  },
 ];
 
 export type ProjectType = {
