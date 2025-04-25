@@ -34,7 +34,7 @@ const page = () => {
               training in 2024. On the other side&#44; I earned my Bachelor of
               Arts degree from West Bengal State University&#44; demonstrating
               my ability to balance both academic and technical growth. I have
-              good problem solving skill
+              good problem solving😊.
             </p>
           </div>
 
