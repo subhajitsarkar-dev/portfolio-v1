@@ -10,6 +10,8 @@ import {
 } from "@/components/ui/card";
 import { ProjectType } from "@/lib/projectData";
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 import { RiShareBoxFill } from "react-icons/ri";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -21,6 +23,8 @@ type ProjectTypeProp = {
 };
 
 const ProjectCard = ({ info }: ProjectTypeProp) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
     <>
       <Card className="rounded-lg shadow-lg transition-shadow duration-300 dark:shadow-lg dark:shadow-white/5">
@@ -50,13 +54,30 @@ const ProjectCard = ({ info }: ProjectTypeProp) => {
 
         <CardContent className="space-y-2 pb-4">
           <div className="text-2xl font-bold">{info.title}</div>
-          <div className="text-justify text-base">{info.description}</div>
+          <div className="text-justify text-base">
+            <p
+              className={`${isExpanded ? "" : "line-clamp-3"} transition-all duration-300`}
+            >
+              {info.description}
+            </p>
+
+            <Button
+              variant="link"
+              size="sm"
+              className="mt-1 p-0 text-blue-600 hover:underline dark:text-blue-400"
+              onClick={() => setIsExpanded(!isExpanded)}
+            >
+              {isExpanded ? "See less" : "See more"}
+            </Button>
+          </div>
         </CardContent>
 
         <CardFooter>
-          <Button className="w-full">
-            View Github <RiShareBoxFill />
-          </Button>
+          <Link href={info.link} className="w-full">
+            <Button className="w-full">
+              View Github <RiShareBoxFill />
+            </Button>
+          </Link>
         </CardFooter>
       </Card>
     </>
